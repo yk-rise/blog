@@ -5,6 +5,13 @@
 [[日常/BLOG/学习log/C语言/C语言\|C语言]]
 这里对正常定义和声明不做记录，记录一些在项目中经常会碰到的情况。更详细可以去看菜鸟教程。
 
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="//blog/log/c//" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+[[日常/BLOG/学习log/C语言/C语言数组\|C语言数组]]
 ## 传递数组给函数
 ### 传递一维数组
 #### 更常用的方法
@@ -87,6 +94,23 @@ void print_c(int *a)
 如果知道二维数组的长度，当然选择第一或者第二种方式，但是长度不确定时，只能传入数组大小来遍历元素啦。
 
 
+
+</div></div>
+
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="//blog/log/c//" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+[[实验室/组会/日报/日报\|日报]]
+
+今天：2024 十月 28日
+[[实验室/组会/日报/日报\|日报]]
+
+今天：2024 十月 28日
+[[实验室/自我提升/C语言/C语言数组\|C语言数组]]
 ## 从函数返回数组
 ### 方式一-外部定义数组
 可以通过返回数组的指针来返回得到经过函数处理后的数组。
@@ -152,6 +176,19 @@ int main(){
 } 
 
 ~~~
+
+
+</div></div>
+
+
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="//blog/log/c//" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+[[实验室/自我提升/C语言/C语言数组\|C语言数组]]
 ## 指向数组的指针
 ~~~c
 double *p;
@@ -161,6 +198,18 @@ p = balance;
 ~~~
 数组名的地址即为数组第一个元素的地址
 
+
+</div></div>
+
+
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="//blog/log/c//" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+[[实验室/自我提升/C语言/C语言数组\|C语言数组]]
 ## 静态数组与动态数组
 静态数组特点：
 - 内存分配：静态数组的内存通常分配在栈上，随着函数的调用和返回而自动管理。
@@ -190,6 +239,18 @@ free(array); // 释放内存
 ~~~
 
 ==PS==:在不再使用该数组的时候，再释放内存。
+
+
+</div></div>
+
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="//blog/log/c//" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+[[实验室/自我提升/C语言/C语言数组\|C语言数组]]
 
 ## 结构体数组
 结构体数组就是储存结构体的数组，每个数组元素都是一个结构体
@@ -305,4 +366,8 @@ int main() {
 
 ~~~
 
+
+
+
+</div></div>
 

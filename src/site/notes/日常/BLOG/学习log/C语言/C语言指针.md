@@ -8,6 +8,13 @@
 &p是表示变量p的地址
 ~~~
 
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="//blog/log/c//" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+[[实验室/自我提升/C语言/C语言数组\|C语言数组]]
 ## 指针数组
 指针数组是储存了一组指针，每个指针都可以指向不同的数据对象的数组。
 
@@ -45,6 +52,17 @@ int main() {
 数组指针：数组指针可以说成是”数组的指针”，首先这个变量是一个指针。
 其次，”数组”修饰这个指针，意思是说这个指针存放着一个数组的首地址，或者说这个指针指向一个数组的首地址。
 
+
+</div></div>
+
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="//blog/log/c//" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+[[实验室/自我提升/C语言/C语言指针\|C语言指针]]
 ## 函数指针
 函数指针是指向函数的指针变量。通常我们说的指针变量是指向一个整型、字符型或数组等变量，而函数指针是指向函数。函数指针可以像一般函数一样，用于调用函数、传递参数。
 ~~~c
@@ -105,6 +123,18 @@ int main(void)
 ~~~
 用函数指针来调用函数就相当于是回调函数。
 
+
+</div></div>
+
+
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="//blog/log/c//" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+[[实验室/自我提升/C语言/C语言指针\|C语言指针]]
 ## 空指针
 空指针是指不指向任何对象的指针
 ~~~c
@@ -119,6 +149,9 @@ int *p = 0;
 - 防止指针成为野指针（野指针是指不知道指针具体指向了哪里，没有进行初始化）
 - 防止数据被意外篡改
 在写程序的时候对于临时的指针在不用的时候要及时设为空指针，防止误用，不然调试的时候很难确定是野指针问题。
+
+</div></div>
+
 # 回调函数
 回调函数就是一个通过函数指针调用的函数。
 ## 为什么要使用回调函数

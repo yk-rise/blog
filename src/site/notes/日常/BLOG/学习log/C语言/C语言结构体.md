@@ -3,7 +3,15 @@
 ---
 
 [[日常/BLOG/学习log/C语言/C语言\|C语言]]
-## 结构作为函数参数
+结构体是一种数据类型，可以储存不同类型的数据。
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="//blog/log/c//" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+[[实验室/自我提升/C语言/C语言结构体\|C语言结构体]]
+## 结构体作为函数参数
 ~~~c
 #include <stdio.h>
 #include <string.h>
@@ -52,6 +60,17 @@ void printBook( struct Books book )
 }
 ~~~
 
+</div></div>
+
+
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="//blog/log/c//" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+[[实验室/自我提升/C语言/C语言结构体\|C语言结构体]]
 ## 指向结构的指针
 
 您可以定义指向结构的指针，方式与定义指向其他类型变量的指针相似，如下所示：
@@ -114,6 +133,18 @@ void printBook( struct Books *book )
    printf( "Book book_id : %d\n", book->book_id);
 }
 ~~~
+
+</div></div>
+
+
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="//blog/log/c//" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+[[实验室/自我提升/C语言/C语言结构体\|C语言结构体]]
 ## 动态可变长的结构体：
 ~~~c
 typedef struct
@@ -131,6 +162,16 @@ strcpy(s->name,"hello");
 ~~~
 注意：一个结构体中只能有一个可变长的成员，并且该成员必须是最后一个成员。
 
+</div></div>
+
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="//blog/log/c//" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+
+[[实验室/自我提升/C语言/C语言结构体\|C语言结构体]]
 ## 包含结构体数组的结构体
 例如：
 ![Pasted image 20241019160257.png](/img/user/Pasted%20image%2020241019160257.png)
@@ -150,3 +191,6 @@ strcpy(s->name,"hello");
 如果是结构体中的结构体数组，则用‘->’访问结构体数组
 ![Pasted image 20241019161338.png](/img/user/Pasted%20image%2020241019161338.png)
 
+
+
+</div></div>
